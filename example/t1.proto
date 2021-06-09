@@ -1,0 +1,13 @@
+
+syntax = "proto3";
+package permission.v1;
+option go_package = "gopermission/permission/v1;v1";
+option java_multiple_files = true;
+option java_package = "com.github.kratos.permission.errors";
+option objc_class_prefix = "KratosPermissionErrors";
+
+enum ErrorReason {
+  ERROR_REASON_UNSPECIFIED = 0; // unknown
+  USER_NOT_FOUND = 1;// not found
+  Role_Create_Fail = 300001001;// 新增角色失败
+}
