@@ -2,14 +2,15 @@ package parser
 
 import (
 	"encoding/json"
-	"errors"
 	"fmt"
-	protoparser "github.com/yoheimuta/go-protoparser/v4"
+	"github.com/pkg/errors"
 	"os"
 	"path/filepath"
+
+	protoparser "github.com/yoheimuta/go-protoparser/v4"
 )
 
-/// 解析 proto3 的 proto 文件
+// ParseToJson 解析 proto3 的 proto 文件
 func ParseToJson(filename string) (string, error) {
 	reader, err := os.Open(filename)
 	if err != nil {

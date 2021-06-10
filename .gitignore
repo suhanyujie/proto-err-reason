@@ -1,2 +1,4 @@
 .idea
 .vscode
+error_code.go
+output_error_code.go
