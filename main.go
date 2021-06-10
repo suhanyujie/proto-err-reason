@@ -15,12 +15,12 @@ import (
 
 func main() {
 	app := &cli.App{
-		Name:  "hello",
-		Usage: "hello world example",
+		Name:  "eTrans",
+		Usage: "eTrans -file=example/t1.proto -o=example/output_error_code.go -pkg=example",
 		Flags: []cli.Flag{
 			&cli.StringFlag{
 				Name:  "file",
-				Value: "",
+				Value: "yourDir/some.proto",
 				Usage: "proto file name",
 			},
 			&cli.StringFlag{

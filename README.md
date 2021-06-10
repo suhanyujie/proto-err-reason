@@ -19,7 +19,7 @@ enum ErrorReason {
 }
 ```
 
-通过执行 errorTrans -file=example/t1.proto -o=example/output_error_code.go -pkg=example
+通过执行 `eTrans -file=example/t1.proto -o=example/output_error_code.go -pkg=example`
 
 可以将其转换为：
 
