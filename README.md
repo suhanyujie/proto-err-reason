@@ -82,4 +82,5 @@ func (i ErrCode) String() string {
 综上，你只需在 proto 文件中（如 `example/t1.proto`）进行错误定义，就能直接生成一套 go 代码中可以使用的**错误码**和**错误描述**。
 
 ## reference
-* https://github.com/yoheimuta/go-protoparser
+* proto parser https://github.com/yoheimuta/go-protoparser
+* go generate https://segmentfault.com/a/1190000020158429
